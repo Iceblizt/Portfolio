@@ -382,28 +382,27 @@ body.dark-mode {
 
 }
 
-/* Style untuk Gambar di Pojok Kanan Bawah */
 .bottom-right-image {
-    position: fixed; /* Membuat gambar selalu terlihat meskipun discroll */
-    bottom: 0;       /* Menempatkan di bagian bawah */
-    right: 0;        /* Menempatkan di bagian kanan */
-    width: 250px;    /* Sesuaikan lebar gambar */
-    height: 250px;   /* Sesuaikan tinggi gambar */
-    background-image: url('img/hexagons-design.png'); /* <-- UBAH BARIS INI */
-    background-size: contain; /* Memastikan gambar pas di dalam elemen tanpa terpotong */
-    background-repeat: no-repeat; /* Mencegah gambar berulang */
-    opacity: 0.3;    /* Membuat sedikit transparan agar tidak terlalu mendominasi (opsional) */
-    z-index: -1;     /* Menempatkan gambar di belakang konten lain */
+    position: fixed; 
+    bottom: 0;     
+    right: 0;        
+    width: 250px;   
+    height: 250px;   
+    background-image: url('img/Hexa.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    opacity: 0.3;    
+    z-index: -1;    
     
-    /* Efek Mirror Horizontal */
     transform: scaleX(-1);
-    -webkit-transform: scaleX(-1); /* Untuk kompatibilitas browser lama */
+    -webkit-transform: scaleX(-1); 
 }
 
-/* Anda bisa sesuaikan ukurannya agar responsif di layar kecil */
+
 @media (max-width: 768px) {
     .bottom-right-image {
         width: 150px;
         height: 150px;
     }
 }
+
